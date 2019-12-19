@@ -1,16 +1,18 @@
 language: php
 
+os: linux
+
 php:
     - 7.2
     - 7.3
     - 7.4
 
 env:
-    matrix:
+    jobs:
         - COMPOSER_FLAGS="--prefer-lowest"
         - COMPOSER_FLAGS=""
 
-beforce_script:
+before_script:
     - travis_retry composer update ${COMPOSER_FLAGS}
 
 script:
