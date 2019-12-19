@@ -18,7 +18,7 @@ $nextNumber = $factory->generateNumber('COMPANYNAME/2019-12-02/001', '/', '2, 3)
 
 ## Testing
 ``` bash
-./vendor/phpunit/phpunit
+composer test
 ```
 
 ## Options
