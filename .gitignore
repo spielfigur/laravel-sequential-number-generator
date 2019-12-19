@@ -1,0 +1,7 @@
+!.gitignore
+.DS_Store
+.phpunit.result.cache
+build
+composer.lock
+html
+vendor

@@ -1,0 +1,30 @@
+{
+    "name": "spielfigur/laravel-sequential-number-generator",
+    "description": "Generates a sequential number for a specific pattern",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Spielfigur"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Spielfigur\\LaravelSequentialNumberGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spielfigur\\LaravelSequentialNumberGenerator\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html html"
+
+    }
+}
