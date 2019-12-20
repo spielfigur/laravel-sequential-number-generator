@@ -21,7 +21,7 @@ class SequentialNumberGeneratorFactory
             return 'number not found? must be an integer!';
         }
         ($currentNumber == (str_repeat('9', $fixedNumberLength))) ? $currentNumber = str_repeat('0', $fixedNumberLength) : $currentNumber++;
-        $currentNumber = sprintf("%'.0" . $fixedNumberLength . 'd', $currentNumber);
+        $currentNumber = sprintf("%'.0".$fixedNumberLength.'d', $currentNumber);
         $a[$position] = $currentNumber;
 
         return implode($separator, $a);
