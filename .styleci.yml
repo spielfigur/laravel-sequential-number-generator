@@ -1,9 +1,1 @@
 preset: laravel
-
-enabled:
-  - alpha_ordered_imports
-
-finder:
-  exclude:
-    - "tests"
-    - "vendor"
