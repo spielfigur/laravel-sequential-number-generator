@@ -4,23 +4,22 @@ namespace Spielfigur\LaravelSequentialNumberGenerator\Tests;
 
 use Orchestra\Testbench\TestCase;
 use Spielfigur\LaravelSequentialNumberGenerator\Facades\SequentialNumberGeneratorFacade;
-use Spielfigur\LaravelSequentialNumberGenerator\SequentialNumberGenerator;
 use Spielfigur\LaravelSequentialNumberGenerator\SequentialNumberGeneratorServiceProvider;
 
-class SequentialNumberGeneratorTestLaravel extends TestCase
+class SequentialNumberGeneratorLaravelTest extends TestCase
 {
     protected function getPackageProviders($app)
     {
-        return array(
+        return [
             SequentialNumberGeneratorServiceProvider::class,
-        );
+        ];
     }
 
     protected function getPackageAliases($app)
     {
-        return array(
+        return [
             'SequentialNumberGeneratorFacade' => SequentialNumberGeneratorFacade::class,
-        );
+        ];
     }
 
     /** @test */
