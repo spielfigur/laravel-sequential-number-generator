@@ -9,11 +9,20 @@ I needed a function to generate a consecutive number for an issue system.
 composer require Spielfigur\laravel-sequential-number-generator
 ```
 
+## Config (optional)
+``` bash
+php artisan vendor:publish --provider="Spielfigur\LaravelSequentialNumberGenerator\SequentialNumberGeneratorServiceProvider"
+```
+
 ## Usage
-you can call the sequential number factory like this:
+in Laravel:
 ``` php
-$factory = new \Spielfigur\LaravelSequentialNumberGenerator\SequentialNumberFactory();
-$nextNumber = $factory->generateNumber('COMPANYNAME/2019-12-02/001', '/', '2, 3);
+$nextNumber = SequentialNumberGenerator::generateNumber('COMPANYNAME/2019-12-02/001', '/', '2, 3);
+```
+in PHP:
+``` php
+$generator = new \Spielfigur\LaravelSequentialNumberGenerator\SequentialNumberGeneratorFactory();
+$nextNumber = $generator->generateNumber('COMPANYNAME/2019-12-02/001', '/', 2, 3);
 ```
 
 ## Testing
